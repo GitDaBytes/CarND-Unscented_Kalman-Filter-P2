@@ -24,6 +24,11 @@ public:
   */
   VectorXd CalculateRMSE(const vector<VectorXd> &estimations, const vector<VectorXd> &ground_truth);
 
+  static double MicroSecsToSecs(long long us)
+  {
+	  return us / 1000000.0;
+  }
+
 };
 
 #endif /* TOOLS_H_ */
